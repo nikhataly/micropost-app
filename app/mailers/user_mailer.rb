@@ -1,7 +1,7 @@
 class UserMailer < ApplicationMailer
 
   def account_activation(user)
-    @greeting = "Hi"
+    @user = user
     mail to: user.email, subject: "Account activation"
   end
 
